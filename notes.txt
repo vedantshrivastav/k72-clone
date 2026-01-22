@@ -1,0 +1,5 @@
+36:44 justify-start instead of justify-center
+43:31 - overflow hidden on the home page main div
+57:23 - css is diff in the video
+1:08:40 - height is taken -70% not -100%
+fix the scroll images part on the projets page
