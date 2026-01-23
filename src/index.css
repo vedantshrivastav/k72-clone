@@ -10,3 +10,17 @@ body{
     font-family: font-2;
     src: url(/fonts/Lausanne-500.woff2);
 }
+.moveX{
+    animation-name: moveAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes moveAnimation {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }   
+}
