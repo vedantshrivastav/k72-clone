@@ -1,7 +1,4 @@
 @import "tailwindcss";
-body{
- background-color: #111; 
-}
 @font-face {
     font-family: font-1;
     src: url(/fonts/Lausanne-300.woff2);
@@ -12,9 +9,16 @@ body{
 }
 .moveX{
     animation-name: moveAnimation;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+.moveLink{
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+.link:hover .moveLink{
+    opacity: 1;
 }
 @keyframes moveAnimation {
     from{

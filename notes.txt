@@ -4,3 +4,5 @@
 1:08:40 - height is taken -70% not -100%
 fix the scroll images part on the projets page
 when we refresh the page the whole screen is going black for very less time why?
+
+TODO - the stairs animation not working when clicked on the nav bar FIX THAT - 3:17:32
