@@ -26,20 +26,23 @@ const Projets = () => {
   ];
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
-    gsap.from(".hero", {
-      height: "100px",
-      stagger: {
-        amount: 0.4,
-      },
-      scrollTrigger: {
-        trigger: ".lol",
-        start: "top 80%",
-        end: "top -20%",
-        markers: true,
-        scrub: true,
-      },
+    gsap.utils.toArray(".hero").forEach((hero) => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: hero,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true,
+          markers: true,
+        },
+      });
+
+      tl.fromTo(hero, { height: 150 }, { height: 850 }).to(hero, {
+        height: 150,
+      });
     });
   });
+
   return (
     <div className="p-4 mb-[100vh]">
       <div className="pt-[45vh]">
